@@ -1,0 +1,17 @@
+{
+    "name": "Mouse Changer",
+    "description": "Customize your mouse!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage", "activeTab", "scripting","tabs"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["ex.js"]
+      }
+    ]
+
+  }
